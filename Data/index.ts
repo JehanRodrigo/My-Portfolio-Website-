@@ -10,9 +10,11 @@ export const gridItems = [
     id: 1,
     title: "I prioritize client collaboration, fostering open communication ",
     description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
+    className:
+      "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] group",
+    imgClassName:
+      "w-full h-full group-hover:scale-110 transition-transform duration-300 ease-in-out",
+    titleClassName: "justify-end group-hover:translate-x-4 transition-transform duration-300 ease-in-out",
     img: "/b1.svg",
     spareImg: "",
   },
@@ -30,7 +32,7 @@ export const gridItems = [
     id: 3,
     title: "My tech stack",
     description: "I constantly try to improve",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2 min-h-[180px]",
     imgClassName: "",
     titleClassName: "justify-center",
     img: "",
