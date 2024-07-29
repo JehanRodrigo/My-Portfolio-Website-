@@ -1,17 +1,11 @@
-import React from "react";
-import { useState } from "react";
-import { InfiniteMovingCards } from "./ui/infiniteMovingCards";
+import React from "react"
+import { InfiniteMovingCards } from "./ui/InfiniteMovingCards";
 import { companies, testimonials } from "@/Data";
 
-// interface Comapany {
-//     id:string | null | undefined,
-//     img:string,
-//     name:string,
-//     nameImg:string
-// }
+
 
 const Clients: React.FC = () => {
-  // const [companyDetails, setCompanyDetails] =useState<Comapany[]>([])
+ 
 
   return (
     <div className="py-20" id="testimonials">
