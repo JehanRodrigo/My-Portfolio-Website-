@@ -7,7 +7,7 @@ import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/Data";
 
-import { FaHome } from "react-icons/fa";
+// import { FaHome } from "react-icons/fa";
 export default function Home() {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">

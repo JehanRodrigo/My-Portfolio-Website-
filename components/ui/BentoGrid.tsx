@@ -7,6 +7,7 @@ import { useState } from "react";
 import animationData from "@/Data/confetti.json";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import Image from "next/image";
 
 export const BentoGrid = ({
   className,
@@ -70,7 +71,9 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
-            <img
+            <Image
+              width={10}
+              height={10}
               src={img}
               alt={img}
               className={cn(imgClassName, "object-cover object-center")}
@@ -83,7 +86,9 @@ export const BentoGridItem = ({
           }`}
         >
           {spareImg && (
-            <img
+            <Image
+              width={10}
+              height={10}
               src={spareImg}
               alt={spareImg}
               className="object-cover object-center, w-full, h-full"
@@ -119,8 +124,8 @@ export const BentoGridItem = ({
                   "Tailwind CSS",
                   "AWS",
                   "MongoDB",
-                  "AWS",
-                  "MongoDB",
+                  "Docker",
+                  "Kubernates",
                 ].map((item) => (
                   <span
                     key={item}
