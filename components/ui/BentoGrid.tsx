@@ -56,6 +56,27 @@ export const BentoGridItem = ({
     setCopied(true);
   };
 
+  const [downloaded, setdownloaded] = useState(false);
+  const handleDownloadCV = () => {
+    // The URL of your CV file
+    const cvUrl = "/Jehan Rodrigo CV.pdf";
+
+    // Create an anchor element
+    const anchor = document.createElement("a");
+    anchor.href = cvUrl;
+    anchor.download = "Jehan Rodrigo CV.pdf";
+
+    // Append the anchor to the body (necessary for Firefox)
+    document.body.appendChild(anchor);
+
+    // Programmatically click the anchor to trigger the download
+    anchor.click();
+
+    // Remove the anchor from the document
+    document.body.removeChild(anchor);
+    setdownloaded(true);
+  };
+
   return (
     <div
       className={cn(
@@ -119,13 +140,13 @@ export const BentoGridItem = ({
               <div className="grid grid-cols-2 gap-3 h-full p-2">
                 {[
                   "React.js",
-                  "Next.js",
-                  "Typescript",
-                  "Tailwind CSS",
-                  "AWS",
-                  "MongoDB",
                   "Docker",
+                  "Typescript",
                   "Kubernates",
+                  "Tailwind CSS",
+                  "MongoDB",
+                  "Next.js",
+                  "AWS",
                 ].map((item) => (
                   <span
                     key={item}
@@ -158,6 +179,18 @@ export const BentoGridItem = ({
                 position="left"
                 otherClasses="!bg-[#161a31]"
                 handleClick={handleCopy}
+              />
+            </div>
+          )}
+
+          {id === 4 && (
+            <div>
+              <MagicButton
+                title={downloaded ? "CV Downloaded" : "Download My CV"}
+                icon={<IoCopyOutline />}
+                position="center"
+                otherClasses="!bg-[#161a31]"
+                handleClick={handleDownloadCV}
               />
             </div>
           )}

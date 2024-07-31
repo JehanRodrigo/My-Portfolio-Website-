@@ -8,14 +8,16 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
-    description: "",
+    title: "Docker Containerization",
+    description:
+      "Passionate about leveraging Docker containerization to streamline development workflows, enhance scalability, and ensure consistent environments for robust and efficient application deployment.",
     className:
       "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] group",
     imgClassName:
       "w-full h-full group-hover:scale-110 transition-transform duration-300 ease-in-out",
-    titleClassName: "justify-end group-hover:translate-x-4 transition-transform duration-300 ease-in-out",
-    img: "/b1.svg",
+    titleClassName:
+      "justify-end group-hover:translate-x-4 transition-transform duration-300 ease-in-out",
+    img: "/DockerContainerization.svg",
     spareImg: "",
   },
   {
@@ -40,19 +42,19 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Checkout My CV Here..",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
+    img: "DockerContainerization.svg",
+    spareImg: "",
   },
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title: "Currently building Multi Tier Web Application Called VProfile",
+    description: "Multi Tier Web Application",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
