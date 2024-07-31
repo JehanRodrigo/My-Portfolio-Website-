@@ -2,7 +2,6 @@ import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
-// import { FaWpexplorer } from "react-icons/fa";
 import { FaLocationArrow } from "react-icons/fa";
 
 const Hero = () => {
@@ -30,15 +29,15 @@ const Hero = () => {
             Dynamic web magic with next.js
           </h2>
           <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Transforming Concepts into Seamless User Experiences"
+            className="text-center text-[40px] md:text-3xl lg:text-5xl"
+            words="Building the Future with Fullstack Expertise and DevOps Precision."
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hi, I'm Jehan Rodrigo, A DevOps Engineering and Fullstack Web
             Development Enthusiast based in Sri Lanka.
           </p>
 
-          <a href="/about">
+          <a href="#projects">
             <MagicButton
               title="See my works"
               position="right"
@@ -50,7 +49,7 @@ const Hero = () => {
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <img
             src="/ProfilePic.png"
-            className="max-w-[250px] min-w-[100px] md:max-w-[450px] w-full md:min-w-[250px]"
+            className="max-w-[500px] min-w-[100px] md:max-w-[450px] w-full md:min-w-[250px] lg:w-[600px]"
           />
         </div>
       </div>
