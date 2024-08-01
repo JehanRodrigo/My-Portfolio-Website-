@@ -44,10 +44,10 @@ export const gridItems = [
     id: 4,
     title: "Checkout My CV Here..",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1 ",
     imgClassName: "",
-    titleClassName: "justify-start",
-    img: "DockerContainerization.svg",
+    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+    img: "",
     spareImg: "",
   },
 
@@ -117,7 +117,7 @@ export const projects = [
     title: "VProfile - Web App (Individual Project) (Ongoing)",
     des: "A Multi Tier Web Application Called VProfile.",
     img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    iconLists: ["/dock.svg", "/tail.svg", "/ts.svg", "/next.svg",],
     link: "https://github.com/adrianhajdin/iphone",
   },
 ];

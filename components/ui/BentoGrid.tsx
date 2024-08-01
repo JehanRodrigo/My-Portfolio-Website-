@@ -121,6 +121,11 @@ export const BentoGridItem = ({
             {/* <div className="absolute z-50 flex items-center justify-center text-white font-bold" /> */}
           </BackgroundGradientAnimation>
         )}
+        {id === 4 && (
+          <BackgroundGradientAnimation>
+            {/* <div className="absolute z-50 flex items-center justify-center text-white font-bold" /> */}
+          </BackgroundGradientAnimation>
+        )}
         <div
           className={cn(
             titleClassName,
@@ -184,7 +189,7 @@ export const BentoGridItem = ({
           )}
 
           {id === 4 && (
-            <div>
+            <div className="flex items-center justify-center w-full">
               <MagicButton
                 title={downloaded ? "CV Downloaded" : "Download My CV"}
                 icon={<IoCopyOutline />}
@@ -193,6 +198,7 @@ export const BentoGridItem = ({
                 handleClick={handleDownloadCV}
               />
             </div>
+            
           )}
         </div>
       </div>
