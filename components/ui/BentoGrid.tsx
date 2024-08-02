@@ -7,6 +7,7 @@ import { useState } from "react";
 import animationData from "@/Data/confetti.json";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import Image from "next/image";
 
 export const BentoGrid = ({
   className,
@@ -55,6 +56,27 @@ export const BentoGridItem = ({
     setCopied(true);
   };
 
+  const [downloaded, setdownloaded] = useState(false);
+  const handleDownloadCV = () => {
+    // The URL of your CV file
+    const cvUrl = "/Jehan Rodrigo CV.pdf";
+
+    // Create an anchor element
+    const anchor = document.createElement("a");
+    anchor.href = cvUrl;
+    anchor.download = "Jehan Rodrigo CV.pdf";
+
+    // Append the anchor to the body (necessary for Firefox)
+    document.body.appendChild(anchor);
+
+    // Programmatically click the anchor to trigger the download
+    anchor.click();
+
+    // Remove the anchor from the document
+    document.body.removeChild(anchor);
+    setdownloaded(true);
+  };
+
   return (
     <div
       className={cn(
@@ -70,7 +92,9 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
-            <img
+            <Image
+              width={10}
+              height={10}
               src={img}
               alt={img}
               className={cn(imgClassName, "object-cover object-center")}
@@ -83,7 +107,9 @@ export const BentoGridItem = ({
           }`}
         >
           {spareImg && (
-            <img
+            <Image
+              width={10}
+              height={10}
               src={spareImg}
               alt={spareImg}
               className="object-cover object-center, w-full, h-full"
@@ -91,6 +117,11 @@ export const BentoGridItem = ({
           )}
         </div>
         {id === 6 && (
+          <BackgroundGradientAnimation>
+            {/* <div className="absolute z-50 flex items-center justify-center text-white font-bold" /> */}
+          </BackgroundGradientAnimation>
+        )}
+        {id === 4 && (
           <BackgroundGradientAnimation>
             {/* <div className="absolute z-50 flex items-center justify-center text-white font-bold" /> */}
           </BackgroundGradientAnimation>
@@ -114,13 +145,13 @@ export const BentoGridItem = ({
               <div className="grid grid-cols-2 gap-3 h-full p-2">
                 {[
                   "React.js",
-                  "Next.js",
+                  "Docker",
                   "Typescript",
+                  "Kubernates",
                   "Tailwind CSS",
-                  "AWS",
                   "MongoDB",
+                  "Next.js",
                   "AWS",
-                  "MongoDB",
                 ].map((item) => (
                   <span
                     key={item}
@@ -155,6 +186,19 @@ export const BentoGridItem = ({
                 handleClick={handleCopy}
               />
             </div>
+          )}
+
+          {id === 4 && (
+            <div className="flex items-center justify-center w-full">
+              <MagicButton
+                title={downloaded ? "CV Downloaded" : "Download My CV"}
+                icon={<IoCopyOutline />}
+                position="center"
+                otherClasses="!bg-[#161a31]"
+                handleClick={handleDownloadCV}
+              />
+            </div>
+            
           )}
         </div>
       </div>
