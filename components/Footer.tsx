@@ -4,6 +4,7 @@ import { FaLocationArrow } from "react-icons/fa";
 import { socialMedia } from "@/Data";
 import Link from "next/link";
 import { IoIosMailOpen } from "react-icons/io";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -46,7 +47,7 @@ const Footer = () => {
 
               {profile.link ? (
                 <Link href={profile.link} target="_blank">
-                  <img
+                  <Image
                     src={profile.img}
                     alt={profile.id}
                     width={20}
@@ -54,7 +55,7 @@ const Footer = () => {
                   />{" "}
                 </Link>
               ) : (
-                <img
+                <Image
                   src={profile.img}
                   alt={profile.id}
                   width={20}

@@ -3,6 +3,8 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
+import Link from "next/link";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -26,31 +28,32 @@ const Hero = () => {
       <div className="flex flex-col md:flex-row relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80 ">
-            Jehan Rodrigo's portfolio with next.js
+            Jehan Rodrigo&apos;s portfolio with next.js
           </h2>
           <TextGenerateEffect
             className="text-center text-[40px] md:text-3xl lg:text-5xl"
             words="Building the Future with Fullstack Expertise and DevOps Precision."
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I'm Jehan Rodrigo, A DevOps Engineering and Fullstack Web
+            Hi, I&apos;m Jehan Rodrigo, A DevOps Engineering and Fullstack Web
             Development Enthusiast based in Sri Lanka.
           </p>
 
-          <a href="#projects">
+          <Link href="#projects">
             <MagicButton
               title="See my works"
               position="right"
               icon={<FaLocationArrow />}
             />
-          </a>
+          </Link>
         </div>
 
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <img
+          <Image
             src="/ProfilePic.png"
+            alt="Profile Pic"
             className="max-w-[500px] min-w-[100px] md:max-w-[450px] w-full md:min-w-[250px] lg:w-[600px]"
-          />
+         />
         </div>
       </div>
     </div>
