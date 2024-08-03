@@ -52,6 +52,8 @@ const Hero = () => {
           <Image
             src="/ProfilePic.png"
             alt="Profile Pic"
+            width={500}
+            height={500}
             className="max-w-[500px] min-w-[100px] md:max-w-[450px] w-full md:min-w-[250px] lg:w-[600px]"
          />
         </div>
