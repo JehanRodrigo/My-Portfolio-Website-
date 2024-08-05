@@ -2,6 +2,7 @@
 
 import { cn } from "@/utils/cn";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 export const InfiniteMovingCards = ({
   items,
@@ -93,7 +94,7 @@ export const InfiniteMovingCards = ({
             }}
             key={idx}
           >
-            <img alt="Certificates" src={item.img} className="rounded-lg h-full" />
+            <Image alt="Certificates" src={item.img} height={500} width={1000}className="rounded-lg h-full" />
           </li>
         ))}
       </ul>

@@ -50,7 +50,7 @@ const MyGrid = () => {
         <div className="h-full row-span-1 items-end justify-center relative rounded-xl bg-[url('/GridItemBg.png')] bg-cover bg-center overflow-hidden">
           <GlobeDemo />
           <div className=" flex-col font-sans font-bold lg:text-3xl max-w-96 m-6">
-            I'm flexible with time zone communications
+            I&apos;m flexible with time zone communications
           </div>
         </div>
         <div className="bg-[url('/GridItemBg.png')] rounded-lg flex flex-col md:flex-row items-center justify-center gap-3 p-3">
