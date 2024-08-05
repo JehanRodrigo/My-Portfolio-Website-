@@ -9,8 +9,8 @@ const Certificates: React.FC = () => {
         <span className="text-purple"> Certificates </span>
         that obtained from Bootcamps
       </h1>
-      <div className=" flex flex-col items-center h-[80vh]">
-        <div className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased items-center relative">
+      <div className=" flex flex-col items-start min-h-[80vh] ">
+        <div className="rounded-md flex flex-col antialiased items-center relative">
           <InfiniteMovingCards
             items={certificates}
             direction="right"
