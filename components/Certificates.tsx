@@ -5,12 +5,12 @@ import { skills, certificates } from "@/Data";
 const Certificates: React.FC = () => {
   return (
     <div className="py-10" id="Certificates">
-      <h1 className="heading">
+      <h1 className="heading pb-10">
         <span className="text-purple"> Certificates </span>
         that obtained from Bootcamps
       </h1>
-      <div className=" flex flex-col items-center h-[80vh]">
-        <div className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased items-center relative">
+      <div className=" flex flex-col items-start ">
+        <div className="rounded-md flex flex-col antialiased items-center h-  relative">
           <InfiniteMovingCards
             items={certificates}
             direction="right"

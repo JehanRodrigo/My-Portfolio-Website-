@@ -4,6 +4,7 @@ import { FaLocationArrow } from "react-icons/fa";
 import { socialMedia } from "@/Data";
 import Link from "next/link";
 import { IoIosMailOpen } from "react-icons/io";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -26,7 +27,7 @@ const Footer = () => {
         </Link>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light">
+        <p className="md:text-base text-sm md:font-normal font-light pb-8 md:pb-0">
           Copyright © 2024 JehanRodrigo
         </p>
         <div className="flex items-center md:gap-3 gap-6">
@@ -46,7 +47,7 @@ const Footer = () => {
 
               {profile.link ? (
                 <Link href={profile.link} target="_blank">
-                  <img
+                  <Image
                     src={profile.img}
                     alt={profile.id}
                     width={20}
@@ -54,7 +55,7 @@ const Footer = () => {
                   />{" "}
                 </Link>
               ) : (
-                <img
+                <Image
                   src={profile.img}
                   alt={profile.id}
                   width={20}
