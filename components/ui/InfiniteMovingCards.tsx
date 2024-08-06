@@ -86,7 +86,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className=" w-[90vw] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-800 p-5 md:p-8 md:w-[60vw]"
+            className=" w-[90vw]  relative rounded-2xl border h-72  border-b-0 flex-shrink-0 border-slate-800 p-5 md:p-8 md:w-[30vw]"
             style={{
               background: "rgb(4,7,29)",
               backgroundColor:
@@ -94,7 +94,13 @@ export const InfiniteMovingCards = ({
             }}
             key={idx}
           >
-            <Image alt="Certificates" src={item.img} height={500} width={1000}className="rounded-lg h-full" />
+            <Image
+              alt="Certificates"
+              src={item.img}
+              height={500}
+              width={1000}
+              className="rounded-lg h-full"
+            />
           </li>
         ))}
       </ul>

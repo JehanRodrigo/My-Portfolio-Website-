@@ -10,7 +10,7 @@ const Certificates: React.FC = () => {
         that obtained from Bootcamps
       </h1>
       <div className=" flex flex-col items-start ">
-        <div className="rounded-md flex flex-col antialiased items-center relative">
+        <div className="rounded-md flex flex-col antialiased items-center h-  relative">
           <InfiniteMovingCards
             items={certificates}
             direction="right"
