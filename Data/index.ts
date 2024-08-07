@@ -95,7 +95,8 @@ export const projects = [
     des: "A web application that allows users to book seats for their favorite movies.",
     img: "/MovieBooking.png",
     iconLists: ["/re.svg", "/node.svg", "/next.svg", "/mongo.png", "/mui.png"],
-    link: "https://github.com/HarshaDMadu/Web_Project",
+    link: "https://www.linkedin.com/posts/jehan-rodrigo_mernstack-webdevelopment-devops-activity-7226871300772741120-Cu9n?utm_source=share&utm_medium=member_desktop",
+    // link: "https://github.com/HarshaDMadu/Web_Project",
   },
   {
     id: 3,
