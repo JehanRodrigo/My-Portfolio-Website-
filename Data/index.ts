@@ -119,7 +119,7 @@ export const projects = [
     des: "A Multi Tier Web Application Called VProfile.",
     img: "/p4.svg",
     iconLists: ["/dock.svg", "/tail.svg", "/ts.svg", "/next.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
+    link: "",
   },
 ];
 
