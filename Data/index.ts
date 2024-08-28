@@ -111,7 +111,6 @@ export const projects = [
       "/Aceternity.png",
     ],
     link: "https://github.com/JehanRodrigo/portfolio-website",
-    // link: "https://github.com/adrianhajdin/ai_saas_app",
   },
   {
     id: 4,
